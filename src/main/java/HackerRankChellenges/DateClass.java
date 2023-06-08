@@ -39,6 +39,7 @@ public class DateClass {
         DateTimeFormatter dateTimeFormate = DateTimeFormatter.ofPattern("hh:mm:ssa");
         LocalTime localTime =  LocalTime.parse(s,dateTimeFormate);
         if(localTime.equals(LocalTime.MIDNIGHT)){
+            System.out.println("");
             return localTime.toString()+":00";
         }
         else {
@@ -46,7 +47,7 @@ public class DateClass {
         }
 
     }
- 
+
 
     public static void main(String[] args){
         getCurrentDate();

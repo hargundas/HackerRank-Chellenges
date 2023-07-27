@@ -23,6 +23,7 @@ public class ArraysDS {
     public static void main (String[] args){
 
         List<Integer>  result =   reverseArray();
+
         System.out.println(result);
     }
 }
